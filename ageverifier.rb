@@ -1,12 +1,15 @@
 def ageVerifier (age)
+  ages = []
+  ages.length.times do |a|
+    if age < 21
+      puts "Too young!"
 
-  if age < 21
-    puts "Too young!"
+    else
+      puts "Proceed!"
+    end
 
-  else age > 21
-    puts "Proceed!"
   end
 
 end
 
-puts ageVerifier(21)
+  print ageVerifier(ages[12, 18, 21, 25])
